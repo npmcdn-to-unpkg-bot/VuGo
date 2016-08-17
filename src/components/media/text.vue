@@ -6,7 +6,7 @@
             <!-- center-aligned text -->
             <div class="text-center">
                 <h1>{{ data.headline }}</h1>
-                <h2 class="subheadline">{{ data.subheadline }}</h2>
+                <h2 class="subheadline">{{ data.subheadline  }}</h2>
                 <p class="ptop date">{{ data.date }}</p>
             </div>
             <!-- center-aligned text -->
@@ -20,6 +20,6 @@
 
 <script>
 export default {
-  props: ['data']        
+  props: ['data']
 }
 </script>
