@@ -1,0 +1,9 @@
+{
+    "type": "text",
+    "data": {
+        "headline": "headline",
+        "subheadline": "subheadline",
+        "date": "date",
+        "text": "some text"
+    }
+}
