@@ -1,0 +1,28 @@
+[
+    {
+        "meta": {
+            "url": "http://0ptr.pizza",
+            "id": "unique-id",
+            "title": "title",
+            "disqus": {
+                "shortname": "0ptr.disqus.com"
+            }
+        },
+        "data": [
+            {
+                "type": "text",
+                "data": {
+                    "headline": "headline",
+                    "subheadline": "subheadline",
+                    "date": "date",
+                    "text": "some text"
+                }
+            },
+            {
+                "type": "image",
+                "data": 
+                    '<div class="columns centered"><div class="column centered col-xs-12"><img src="media/images/matroschka/01.png" class="img-responsive image " /></div></div>'
+            }
+        ]
+    }
+]
