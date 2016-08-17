@@ -1,0 +1,73 @@
+.resp-sharing-button {
+  display: inline-block;
+  border: none;
+}
+
+.resp-sharing-button a {
+  text-decoration: none;
+  display: block;
+  border: none;
+}
+
+.resp-sharing-button__icon {
+  display: inline-block;
+}
+
+.resp-sharing-button__icon svg {
+  width: 2.2em;
+  height: 2.2em;
+  padding-right: 1em;
+}
+
+.resp-sharing-button__icon img {
+  width: 2em;
+  height: 2em;
+}
+
+.resp-sharing-button__link {
+  text-decoration: none;
+  border: none;
+}
+
+.resp-sharing-button__wrapper {
+  display: inline-block;
+  padding: 2rem 0 2rem 0;
+}
+.resp-sharing-button:hover,
+.resp-sharing-button:active {
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    color: #f5f5f5; 
+}
+
+.resp-sharing-button--facebook:hover,
+.resp-sharing-button--facebook:active {
+
+}
+
+.resp-sharing-button--twitter:hover,
+.resp-sharing-button--twitter:active {
+
+}
+
+.resp-sharing-button--google:hover,
+.resp-sharing-button--google:active {
+
+}
+
+.resp-sharing-button--pinterest:hover,
+.resp-sharing-button--pinterest:active {
+
+}
+
+.resp-sharing-button--reddit:hover,
+.resp-sharing-button--reddit:active {
+  
+}
+
+.resp-sharing-button--whatsapp:hover,
+.resp-sharing-button--whatsapp:active {
+
+}

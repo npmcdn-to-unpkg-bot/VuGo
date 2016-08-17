@@ -1,0 +1,12 @@
+{
+    "meta": {
+        "url": "http://0ptr.pizza",
+        "disqus": {
+            "shortname": "0ptr.disqus.com"
+        }
+    },
+    "data": {
+        "id": "unique-id",
+        "title": "title"
+    }
+}
