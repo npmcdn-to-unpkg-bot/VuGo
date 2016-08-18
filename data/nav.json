@@ -1,0 +1,22 @@
+[
+        {
+          "title": "pics",
+          "slug": "/pics"
+        },
+
+        {
+          "title": "tools",
+          "slug": "/tools"
+        },
+
+        {
+          "title": "archive",
+          "slug": "/archive"
+        },
+
+        {
+          "title": "about",
+          "slug": "/about"
+        }
+]
+
