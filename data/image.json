@@ -1,0 +1,10 @@
+{
+    "type": "image",
+    "data": 
+        '<div class="columns centered">
+        <div class="column centered col-xs-12">
+             <img src="media/images/matroschka/01.png" class="img-responsive image " />
+        </div>
+    </div>'
+    
+}
