@@ -1,26 +1,18 @@
 <template>
-  <nav-bar></nav-bar>
-  <div class="container content">
     <div id="app">
-    <post v-bind:post_data="postData"></post>
-    </div>
+        <nav-bar></nav-bar>
+        <div class="container content">
+            <router-view></router-view>
+        </div>
   </div>
 </template>
 
 <script>
 import NavBar from './components/nav/nav-bar'
-import Post from './components/content/post'
-import postData from '../data/post.json'
 
 export default {
   components: {
-    NavBar,
-    Post
-  },
-  data () {
-    return {
-      postData
-    }
+    NavBar
   }
 }
 </script>
