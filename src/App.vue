@@ -2,7 +2,7 @@
   <nav-bar></nav-bar>
   <div class="container content">
     <div id="app">
-    <post v-bind:post_data="post_data"></post>
+    <post v-bind:post_data="postData"></post>
     </div>
   </div>
 </template>
@@ -10,6 +10,7 @@
 <script>
 import NavBar from './components/nav/nav-bar'
 import Post from './components/content/post'
+import postData from '../data/post.json'
 
 export default {
   components: {
@@ -18,35 +19,7 @@ export default {
   },
   data () {
     return {
-      // note: changing this line won't causes changes
-      // with hot-reload because the reloaded component
-      // preserves its current state and we are modifying
-      // its initial state.
-      post_data: {
-        'meta': {
-          'url': 'http://0ptr.pizza',
-          'id': 'unique-id',
-          'title': 'title',
-          'disqus': {
-            'shortname': '0ptr.disqus.com'
-          }
-        },
-        'content': [
-          {
-            'type': 'text',
-            'data': {
-              'headline': 'headline',
-              'subheadline': 'subheadline',
-              'date': 'date',
-              'text': 'some text'
-            }
-          },
-          {
-            'type': 'image',
-            'data': '<div class="columns centered"><div class="column centered col-xs-12"><img src="media/images/matroschka/01.png" class="img-responsive image " /></div></div>'
-          }
-        ]
-      }
+      postData
     }
   }
 }
