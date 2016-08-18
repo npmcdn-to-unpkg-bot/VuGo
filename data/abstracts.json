@@ -1,35 +1,13 @@
-[
-  {
+[{
 	"meta": {
 		"url": "http://0ptr.pizza",
-        "slug": "matroschka",
+		"slug": "matroschka",
 		"id": "unique-id",
 		"disqus": {
 			"shortname": "0ptr.disqus.com"
-		},
-        "abstract": {
-            "headline": "Матрёшка",
-            "subheadline": "Steganography with Python",
-            "date": "APRIL 25, 2016",
-            "text": "Матрёшка [mɐˈtrʲɵʂkə] is a command-line steganography tool written in pure Python. You can use it to hide and encrypt images or text in the least significant bits of pixels in an image.",
-            "image": "<img src=\"static/img/matroschka/01.png\" class=\"cover circle img-responsive\" />"
-        }
-      }
-    }, 
-    {
-	"meta": {
-		"url": "http://0ptr.pizza",
-        "slug": "test",
-		"id": "unique-id",
-		"disqus": {
-			"shortname": "0ptr.disqus.com"
-		},
-        "abstract": {
-            "headline": "Test",
-            "subheadline": "Steganography with Python",
-            "date": "APRIL 25, 2016",
-            "text": "Матрёшка [mɐˈtrʲɵʂkə] is a command-line steganography tool written in pure Python. You can use it to hide and encrypt images or text in the least significant bits of pixels in an image.",
-            "image": "<img src=\"static/img/logo.png\" class=\"cover circle img-responsive\" />"        }
-      }
-    }
-]
+		}
+	},
+	"abstract": {
+		"text": "<!-- center-aligned text -->\n            <div class=\"text-center\">\n                <h1>Матрёшка</h1>\n                <h2 class=\"subheadline\">Steganography with Python</h2>\n                <p class=\"ptop date\">JULY 25, 2016</p>\n            </div>\n            <!-- center-aligned text -->\nМатрёшка [mɐˈtrʲɵʂkə] is a command-line steganography tool written in pure Python. You can use it to hide and encrypt images or text in the least significant bits of pixels in an image.",
+		"image": "<!-- Centered Image -->\n<div class=\"columns centered\">\n    <div class=\"column centered col-xs-12\">\n        <img src=\"static/img/matroschka/01.png\" class=\"img-responsive image \" />\n    </div>\n</div>\n<!-- End Centered Image -->"	}
+}]
