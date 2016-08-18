@@ -12,9 +12,7 @@
 </template>
 
 <script>
-var marked = require('marked')
-
 export default {
-  props: ['data'],
+  props: ['data']
 }
 </script>
