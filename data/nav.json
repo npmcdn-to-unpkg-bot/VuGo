@@ -1,12 +1,12 @@
 [
         {
           "title": "pics",
-          "slug": "/pics"
+          "slug": "/tag/pics"
         },
 
         {
           "title": "tools",
-          "slug": "/tools"
+          "slug": "/tag/tools"
         },
 
         {
