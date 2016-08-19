@@ -11,15 +11,31 @@
 import Text from '../media/text'
 import Blob from '../media/image'
 import abstractsData from '../../../data/abstracts.json'
+import tagsData from '../../../data/tags.json'
 
 export default {
   components: {
     Text,
     Blob
   },
-  data () {
-    return {
-      abstracts_data: abstractsData
+  route: {
+    data: function (transition) {
+      var tagname = transition.to.params.tagname
+      if (!tagname) {
+        return {
+          abstracts_data: abstractsData
+        }
+      }
+      var data = tagsData[tagname]
+      if (!data) {
+        this.$router.go({
+          path: '/'
+        })
+      } else {
+        return {
+          abstracts_data: data
+        }
+      }
     }
   }
 }
