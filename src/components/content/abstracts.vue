@@ -29,7 +29,7 @@ export default {
       var data = tagsData[tagname]
       if (!data) {
         this.$router.go({
-          path: '/'
+          name: 'archive'
         })
       } else {
         return {
