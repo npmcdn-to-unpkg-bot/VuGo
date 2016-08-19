@@ -2,7 +2,6 @@ import Vue from 'vue'
 import App from './App'
 import Abstracts from './components/content/abstracts'
 import Post from './components/content/post'
-import NotFound from './components/app/not-found.vue'
 
 var VueRouter = require('vue-router')
 Vue.use(VueRouter)
@@ -11,8 +10,7 @@ Vue.use(VueRouter)
 // You can pass in additional options here, but let's
 // keep it simple for now.
 var router = new VueRouter({
-  history: true,
-  root: '/'
+  history: true
 })
 
 // Define some routes.
@@ -21,6 +19,10 @@ var router = new VueRouter({
 // Vue.extend(), or just a component options object.
 // We'll talk about nested routes later.
 router.map({
+  '/': {
+    component: Abstracts,
+    name: 'root'
+  },
   '/:postname': {
     component: Post,
     name: 'post'
@@ -29,9 +31,9 @@ router.map({
     component: Abstracts,
     name: 'archive'
   },
-  '*': {
-    component: NotFound,
-    name: '404'
+  '/tag/:tagname': {
+    component: Abstracts,
+    name: 'tag'
   }
 })
 
