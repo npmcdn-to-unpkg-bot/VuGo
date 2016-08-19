@@ -45,8 +45,15 @@ export default {
   route: {
     data: function (transition) {
       var postname = transition.to.params.postname
-      return {
-        post_data: postData[postname]
+      var data = postData[postname]
+      if (!data) {
+        this.$router.go({
+          name: 'archive'
+        })
+      } else {
+        return {
+          post_data: data
+        }
       }
     }
   }
