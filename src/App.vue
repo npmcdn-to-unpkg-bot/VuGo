@@ -9,11 +9,13 @@
 
 <script>
 import NavBar from './components/nav/nav-bar'
+import store from './vuex/store'
 
 export default {
   components: {
     NavBar
-  }
+  },
+  store: store
 }
 </script>
 
