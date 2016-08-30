@@ -51,9 +51,8 @@ export default {
   },
   route: {
     data: function (transition) {
-        return {
-          ab_data: this.about_data 
-        }
+      return {
+        ab_data: this.about_data
       }
     }
   }
