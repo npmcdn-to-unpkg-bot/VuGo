@@ -16,15 +16,31 @@
 
 <script>
 import NavItem from './nav-item'
-import navItems from '../../../data/nav.json'
 
 export default {
   components: {
     NavItem
   },
-  data () {
+  // this where we retrieve state from the store
+  vuex: {
+    getters: {
+      // a state getter function, which will
+      // bind `store.state.nav_data` on the component as `this.post_data`
+      nav_data: function (state) {
+        return state.nav_data
+      }
+    }
+  },
+  data: function () {
     return {
-      nav_items: navItems
+      nav_items: this.nav_data
+    }
+  },
+  route: {
+    data: function (transition) {
+      return {
+        nav_items: this.nav_data
+      }
     }
   }
 }
