@@ -1,5 +1,5 @@
 <template>
-    <template v-for="abstract_data in abstracts_data">
+    <template v-for="abstract_data in abs_data">
         <a v-link="{ name: 'post', params: { postname: abstract_data.meta.slug }}">
             <blob v-bind:data="abstract_data.abstract.image"></blob>
             <text v-bind:data="abstract_data.abstract.text"></text>
@@ -10,31 +10,43 @@
 <script>
 import Text from '../media/text'
 import Blob from '../media/image'
-import abstractsData from '../../../data/abstracts.json'
-import tagsData from '../../../data/tags.json'
 
 export default {
   components: {
     Text,
     Blob
   },
+  // this where we retrieve state from the store
+  vuex: {
+    getters: {
+      // a state getter function, which will
+      // bind `store.state.abstracts_data` on the component as `this.abstracts_data`
+      abstracts_data: function (state) {
+        return state.abstracts_data
+      },
+      // a state getter function, which will
+      // bind `store.state.tags_data` on the component as `this.tags_data`
+      tags_data: function (state) {
+        return state.tags_data
+      }
+    }
+  },
+  data () {
+    return {
+      abs_data: this.abstracts_data
+    }
+  },
   route: {
     data: function (transition) {
       var tagname = transition.to.params.tagname
       if (!tagname) {
         return {
-          abstracts_data: abstractsData
+          abs_data: this.abstracts_data
         }
       }
-      var data = tagsData[tagname]
-      if (!data) {
-        this.$router.go({
-          name: 'archive'
-        })
-      } else {
-        return {
-          abstracts_data: data
-        }
+      var abstractsData = this.tags_data[tagname]
+      return {
+        abs_data: abstractsData
       }
     }
   }
