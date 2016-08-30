@@ -2,6 +2,8 @@ import Vue from 'vue'
 import App from './App'
 import Abstracts from './components/content/abstracts'
 import Post from './components/content/post'
+import About from './components/content/about'
+import store from './vuex/store'
 
 var VueRouter = require('vue-router')
 Vue.use(VueRouter)
@@ -23,13 +25,17 @@ router.map({
     component: Abstracts,
     name: 'root'
   },
-  '/:postname': {
-    component: Post,
-    name: 'post'
+  '/about': {
+    component: About,
+    name: 'about'
   },
   '/archive': {
     component: Abstracts,
     name: 'archive'
+  },
+  '/posts/:postname': {
+    component: Post,
+    name: 'post'
   },
   '/tag/:tagname': {
     component: Abstracts,
@@ -41,5 +47,6 @@ router.map({
 // The router will create an instance of App and mount to
 // the element matching the selector #app.
 router.start({
+  store,
   components: { App }
 }, 'body')
